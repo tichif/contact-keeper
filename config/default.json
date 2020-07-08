@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://tichif123:tichif123@contactkeeper.e8vkx.mongodb.net/contactkeeper?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://tichif123:tichif123@contactkeeper.e8vkx.mongodb.net/contactkeeper?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
 }
