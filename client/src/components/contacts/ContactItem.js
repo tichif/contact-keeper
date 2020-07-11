@@ -20,16 +20,20 @@ const ContactItem = ({ contact }) => {
       <ul className='list'>
         <li>
           {email && (
-            <li>
-              <i className='fas fa-envelope-open'></i> {email}
-            </li>
+            <ul>
+              <li>
+                <i className='fas fa-envelope-open'></i> {email}
+              </li>
+            </ul>
           )}
         </li>
         <li>
           {phone && (
-            <li>
-              <i className='fas fa-phone'></i> {phone}
-            </li>
+            <ul>
+              <li>
+                <i className='fas fa-phone'></i> {phone}
+              </li>
+            </ul>
           )}
         </li>
       </ul>
