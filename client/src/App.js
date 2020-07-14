@@ -7,6 +7,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import setAuthToken from './utils/setAuthToken';
 
 // Contact State
 import ContactState from './context/contact/ContactState';
@@ -14,6 +15,10 @@ import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
 // Alert State
 import AlertState from './context/alert/AlertState';
+
+if (localStorage.token) {
+  setAuthToken(localStorage.token);
+}
 
 const App = () => {
   return (
